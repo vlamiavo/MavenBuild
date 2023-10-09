@@ -6,14 +6,18 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Java CI with Maven - vlamiavo 
 
 on:
   push:
-    branches: [ "master", "develop" ]
+    branches: [ "master"]
+    paths:
+     - 'src/**'
+     - '.github/workflows/maven.yaml'
   pull_request:
     branches: [ "master" ]
   workflow_dispatch:
+  
 jobs:
   build:
 
